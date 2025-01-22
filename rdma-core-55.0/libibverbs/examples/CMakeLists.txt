@@ -12,6 +12,9 @@ target_link_libraries(ibv_devices LINK_PRIVATE ibverbs)
 rdma_executable(ibv_devinfo devinfo.c)
 target_link_libraries(ibv_devinfo LINK_PRIVATE ibverbs)
 
+rdma_executable(simple_test simple_test.c)
+target_link_libraries(simple_test LINK_PRIVATE ibverbs)
+
 rdma_executable(ibv_rc_pingpong rc_pingpong.c)
 target_link_libraries(ibv_rc_pingpong LINK_PRIVATE ibverbs ibverbs_tools)
 
