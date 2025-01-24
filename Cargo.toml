@@ -14,4 +14,4 @@ log = "0.4.25"
 blue-rdma-driver = { path = "../blue-rdma-driver", version = "0.1.0" }
 
 # FFI bindings, may replaced with bindgen in the future
-ffi = { package = "ibverbs-sys", version = "=0.3.1" }
+ffi = { package = "ibverbs-sys", path = "../rust-ibverbs/ibverbs-sys" }
